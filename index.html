@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <nav>
+        <div class="logo">
+            <img src="C:\Users\eferm\Desktop\New folder\pic1.png">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="../index.html">Product</a></li>
+                <li><a href="Patent.html">Patent</a></li>
+                <li><a href="Problem.html">Problem</a></li>
+                <li><a href="Solution.html">Solution</a></li>
+                <li><a href="Phases Page.html">Phases Page</a></li>
+                <li><a href="Users Acceptable.html">Users Acceptable</a></li>
+                <li><a href="About the creator.html">About the creator</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+    <div class="food">
+        <div class="overlay"></div>
+        <div id="circle">
+            <div class="feature one">
+            <img src="C:\Users\eferm\Desktop\\New folder\pic2.png">
+                <div>
+                    <h1>Menu</h1>
+                    <p>All meet, With Vegetable</p>
+                </div>
+            </div>
+            <div class="feature two">
+            <img src="C:\Users\eferm\Desktop\New folder\pic3.png">
+                <div>
+                    <h1>Price</h1>
+                    <p>65 Pesos, 75 Pesos</p>
+                </div>
+            </div>
+            <div class="feature three">
+            <img src="C:\Users\eferm\Desktop\New folder\pic4.png">
+                <div>
+                    <h1>Extra</h1>
+                    <p>Add Ons</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div class="controls">
+        <img src="C:\Users\eferm\Desktop\New folder\pic5.png" id="upBtn">
+        <h3>Features</h3>
+        <img src="C:\Users\eferm\Desktop\New folder\pic6.png" id="downBtn">
+        </div>
+        
+        <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+        
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+            
+            
+            upBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+            downBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+        </script>
+        
+</div>
+</body>
+</html>
